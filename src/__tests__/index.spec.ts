@@ -1,4 +1,4 @@
-import { parser } from '../src/index';
+import { parser } from '../index';
 
 //命令行输入参数转 args 数组
 function argsCreater(input: string): string[] {
