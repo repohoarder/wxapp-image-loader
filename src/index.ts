@@ -27,7 +27,7 @@ class WxappImageLoader {
    */
   private option: IOption;
 
-  constructor(input: commander.CommanderStatic) {
+  constructor(input: commander.Command) {
     const option: IOption = defaultOption;
     if (input.typescript) {
       option.typescript = true;

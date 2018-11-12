@@ -17,17 +17,19 @@
     "prettier": "1.14.3",
     "rimraf": "~2.6.2",
     "ts-jest": "~23.10.2",
+    "ts-loader": "^5.3.0",
     "tslint": "~5.11.0",
     "tslint-config-prettier": "1.15.0",
     "tslint-microsoft-contrib": "~5.2.1",
     "tsutils": "~3.0.0",
-    "typescript": "~3.1.0"
+    "typescript": "~3.1.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
   },
   "scripts": {
     "commit": "git-cz",
-    "clean": "rimraf coverage build tmp",
-    "build": "tsc -p tsconfig.release.json",
-    "build:watch": "tsc -w -p tsconfig.release.json",
+    "clean": "rimraf coverage build tmp dist",
+    "build": "yarn clean && webpack",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
