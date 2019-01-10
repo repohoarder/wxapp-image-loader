@@ -29,11 +29,11 @@
     "commit": "git-cz",
     "clean": "rimraf coverage build tmp dist .nyc_output",
     "dev": "yarn clean && tsc --watch",
-    "build": "yarn clean &&tsc --build tsconfig.build.json",
+    "build": "yarn clean && tsc --build tsconfig.build.json",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
     "test": "nyc jest",
     "test:watch": "nyc jest --watch",
-    "ci": "yarn clean && yarn lint && yarn test && yarn build",
+    "ci": "yarn clean && yarn lint && yarn test && tsc --build tsconfig.build.json",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "config": {
