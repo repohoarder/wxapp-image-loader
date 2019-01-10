@@ -26,9 +26,6 @@ class WxappImageLoader {
     this.option = option;
   }
 
-  public getOption() {
-    return this.option;
-  }
   // tslint:disable-next-line:no-empty
   public load() {}
 }

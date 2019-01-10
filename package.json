@@ -32,7 +32,7 @@
     "build": "yarn clean &&tsc --build tsconfig.build.json",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
     "test": "nyc jest",
-    "test:watch": "jest --watch",
+    "test:watch": "nyc jest --watch",
     "ci": "yarn clean && yarn lint && yarn test && yarn build",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },

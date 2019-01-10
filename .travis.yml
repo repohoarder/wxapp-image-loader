@@ -6,6 +6,6 @@ node_js:
   - '10'
 script:
   - yarn
-  - yarn test
+  - yarn ci
 after_script:
   - yarn coverage
