@@ -15,6 +15,7 @@ build/
 # VS Code
 .vscode
 !.vscode/tasks.js
+!.vscode/setting.json
 
 # JetBrains IDEs
 .idea/
@@ -30,3 +31,7 @@ build/
 
 # webpack dist
 dist/
+
+.nyc_output/
+
+package-lock.json
