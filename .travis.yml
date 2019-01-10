@@ -8,4 +8,4 @@ script:
   - yarn
   - yarn test
 after_script:
-  - yarn add codecov && yarn codecov
+  - yarn coverage
