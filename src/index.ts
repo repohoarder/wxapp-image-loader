@@ -27,7 +27,10 @@ class WxappImageLoader {
   }
 
   // tslint:disable-next-line:no-empty
-  public load() {}
+  public load() {
+    // tslint:disable-next-line: no-console
+    console.log(this.option.typescript);
+  }
 }
 
 export { WxappImageLoader };
