@@ -26,10 +26,15 @@ class WxappImageLoader {
     this.option = option;
   }
 
-  // tslint:disable-next-line:no-empty
   public load() {
-    // tslint:disable-next-line: no-console
-    console.log(this.option.typescript);
+    const { typescript } = this.option;
+    if (typescript) {
+      // tslint:disable-next-line: no-console
+      console.log('生成 ts 文件');
+    } else {
+      // tslint:disable-next-line: no-console
+      console.log('生成 js 文件');
+    }
   }
 }
 
