@@ -1,5 +1,4 @@
 import * as coffee from 'coffee';
-
 import * as path from 'path';
 
 describe('测试参数解析', () => {
