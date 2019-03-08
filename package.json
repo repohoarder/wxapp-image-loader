@@ -59,11 +59,14 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@types/jest": "~23.3.2",
+    "@types/mz": "^0.0.32",
     "axios": "^0.18.0",
     "coffee": "^5.2.1",
     "commander": "^2.19.0",
+    "mz": "^2.7.0",
     "nyc": "^13.1.0",
     "ts-jest": "~23.10.2",
-    "tslib": "~1.9.3"
+    "tslib": "~1.9.3",
+    "zlogger": "^2.0.0"
   }
 }
